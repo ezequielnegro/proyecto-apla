@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+  color: rgba(12, 12, 12, 1);
+}
+
+body {
+  background-color: rgba(165, 135, 99, 1);
+}
+
+.header-logo{
+  display: flex;
+  flex-flow: column;
+  align-items: center; 
+}
+
+.footer-logo{
+  display: flex;
+  flex-flow: column;
+  align-items: center; 
+}
+.logo {
+  margin: 0 auto;
+}
+
+.tipo-logo {
+  text-align: center;
+  color: rgba(165, 135, 99, 1);
+  width: 200px;
+}
+
+a {
+  color: rgba(165, 135, 99, 1);
+}
+
+.color-fondo,
+.lista {
+  background-color: rgba(12, 12, 12, 1);
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+
+
+.seccion-1,
+.seccion-2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.seccion-2 {
+  justify-content: space-evenly;
+}
+
+.caja-texto {
+  display: flex;
+  width: 560px;
+  height: 315px;
+  margin: 20px 20px 20px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.titulo {
+  width: 560px;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: antiquewhite, 1px;
+}
+
+.caja-video {
+  display: flex;
+  width: 560px;
+  height: 315px;
+  margin: 20px 20px 20px 20px;
+}
+
+.caja-imagen {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 440px;
+  height: 300px;
+  text-align: center;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imagen-beer {
+  width: 400px;
+  height: 200px;
+}
+.imagen-beer:hover{
+  width: 500px;
+  height: 300px;
+}
+
+.boton-beer {
+  background-color:  rgba(12, 12, 12, 1);
+  color: rgba(165, 135, 99, 1);
+  width: 80px;
+  border-radius: 15px;
+  border: none;
+}
+
+.boton-beer:hover{
+  background-color:   rgba(165, 135, 99, 1);
+  color: rgba(12, 12, 12, 1);
+}
+
+.rrss {
+  display: flex;
+  flex-flow: row;
+  justify-content: end;
+}
+
+/* Color Theme Swatches in RGBA 
+colores que voy a usar
+.Russian-Imperial-Stout-1-rgba { 
+  color: rgba(216, 149, 67, 1); 
+}
+.Russian-Imperial-Stout-2-rgba {
+  color: rgba(165, 135, 99, 1);
+}
+.Russian-Imperial-Stout-3-rgba {
+  color: rgba(89, 55, 26, 1);
+}
+.Russian-Imperial-Stout-4-rgba {
+  color: rgba(165, 97, 72, 1);
+}
+.Russian-Imperial-Stout-5-rgba {
+  color: rgba(12, 12, 12, 1);
+}*/
