@@ -7,59 +7,85 @@
   font-family: "poppins";
   color: rgba(12, 12, 12, 1);
 }
+ul,p {
+  margin:0;
+}
+
+:root {
+  --color-oscuro: rgba(12, 12, 12, 1);
+  --color-claro: rgba(165, 135, 99, 1);
+
+}
 
 body {
-  background-color: rgba(165, 135, 99, 1);
+  background-color: var(--color-claro);
 }
 
-.header-logo{
+.header-logo {
   display: flex;
-  flex-flow: column;
-  align-items: center; 
+  flex-flow: row;
+justify-content: center;
 }
 
-.footer-logo{
-  display: flex;
-  flex-flow: column;
-  align-items: center; 
-}
-.logo {
-  margin: 0 auto;
+
+
+.logo {  width: 128px;
+  height: 96px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .tipo-logo {
   text-align: center;
-  color: rgba(165, 135, 99, 1);
-  width: 200px;
-}
+  color: var(--color-claro);
+ }
 
 a {
-  color: rgba(165, 135, 99, 1);
+  color: var(--color-claro);
 }
 
 .color-fondo,
 .lista {
-  background-color: rgba(12, 12, 12, 1);
+  background-color: var(--color-oscuro);
+}
+
+.cabecera {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
 }
 
 .menu {
   display: flex;
   list-style-type: none;
-  flex-direction: row;
-  justify-content:space-evenly;
+  /* margin:0; */
+  flex-flow: row wrap;
+  padding: 2% 2% 2% 2%;
+  justify-content: flex-end;
 }
-
+.lista{margin-left: 1%;
+margin-right: 1%;}
 
 .seccion-1,
 .seccion-2 {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+
 }
 
-.seccion-2 {
-  justify-content: space-evenly;
+.carrusel-custom {
+  width: 400px;
+  height: 600px;
+  margin: 20px;
 }
+
+.img-bordes{
+  border: solid 2px var(--color-oscuro);
+}
+
+/* .seccion-2 {
+  justify-content: space-evenly;
+} */
 
 .caja-texto {
   display: flex;
@@ -77,12 +103,6 @@ a {
   text-shadow: antiquewhite, 1px;
 }
 
-.caja-video {
-  display: flex;
-  width: 560px;
-  height: 315px;
-  margin: 20px 20px 20px 20px;
-}
 
 .caja-imagen {
   display: flex;
@@ -100,28 +120,44 @@ a {
   width: 400px;
   height: 200px;
 }
-.imagen-beer:hover{
+
+.imagen-beer:hover {
   width: 500px;
   height: 300px;
 }
 
 .boton-beer {
-  background-color:  rgba(12, 12, 12, 1);
-  color: rgba(165, 135, 99, 1);
+  background-color: var(--color-oscuro);
+  color: var(--color-claro);
   width: 80px;
   border-radius: 15px;
   border: none;
 }
 
-.boton-beer:hover{
-  background-color:   rgba(165, 135, 99, 1);
-  color: rgba(12, 12, 12, 1);
+.boton-beer:hover {
+  background-color:var(--color-claro);
+  color: var(--color-oscuro)
+}
+
+.estilo-footer{
+  display: flex;
+  flex-flow: row;
+  background-color: var(--color-oscuro);
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  display: flex;
+  flex-flow: row;
+
 }
 
 .rrss {
-  display: flex;
+   display: flex;
   flex-flow: row;
-  justify-content: end;
+  justify-content: end; 
+  height: 64px;
+  width: 128px;
 }
 
 /* Color Theme Swatches in RGBA 
