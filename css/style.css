@@ -73,6 +73,11 @@ margin-right: 1%;}
 
 }
 
+.parrafo-seccion-1{
+  font-size:larger;
+  text-align: center;
+}
+
 .carrusel-custom {
   width: 400px;
   height: 600px;
@@ -90,17 +95,16 @@ margin-right: 1%;}
 .caja-texto {
   display: flex;
   width: 560px;
-  height: 315px;
-  margin: 20px 20px 20px 20px;
-  flex-wrap: wrap;
-  text-align: center;
+  flex-direction: column;
+  align-self: center;
 }
 
 .titulo {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
   width: 560px;
   font-size: 40px;
-  text-align: center;
-  text-shadow: antiquewhite, 1px;
 }
 
 
@@ -111,9 +115,9 @@ margin-right: 1%;}
   width: 440px;
   height: 300px;
   text-align: center;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
+  flex-flow: column wrap;
+   align-items: center;
+  justify-content: space-around; 
 }
 
 .imagen-beer {
@@ -140,28 +144,36 @@ margin-right: 1%;}
 }
 
 .estilo-footer{
-  display: flex;
-  flex-flow: row;
-  background-color: var(--color-oscuro);
-  justify-content: flex-start;
+   display: grid;
+  grid-template-columns: 0.5fr 2fr;
+   background-color: var(--color-oscuro);
+  /* display: flex;
+flex-direction: row;
+ 
+  justify-content: space-between; */
 }
 
 .footer-logo {
   display: flex;
-  flex-flow: row;
+ flex-direction: row;
+ justify-content: center;
 
 }
 
 .rrss {
    display: flex;
-  flex-flow: row;
+  flex-direction: row;
   justify-content: end; 
+  margin-right: 5%;
+} 
+
+.imagen-rrss{
   height: 64px;
   width: 128px;
 }
 
 /* Color Theme Swatches in RGBA 
-colores que voy a usar
+colores que voy a usar*/
 .Russian-Imperial-Stout-1-rgba { 
   color: rgba(216, 149, 67, 1); 
 }
@@ -176,4 +188,4 @@ colores que voy a usar
 }
 .Russian-Imperial-Stout-5-rgba {
   color: rgba(12, 12, 12, 1);
-}*/
+}
