@@ -350,7 +350,11 @@ align-items: center;
 
 
 /* estilos de la página de estilos */
-
+.conteiner-estilos-cervezas{
+  display:grid;
+  grid-template-columns: 200px 800px;
+  grid-template-rows: 600px 600px;
+}
 
 
 
