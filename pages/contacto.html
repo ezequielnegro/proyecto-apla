@@ -26,19 +26,17 @@
     </header>
     <main>
       <h1 class="titulo">Contactese con Nosotros</h1>
-      <form>
-        <input type="text" name="Nombre" placeholder="Nombre" />
-        <input type="email" name="email" placeholder="Email" />
-        <div>
-          <textarea
-            name="Mensaje"
-            cols="46"
-            rows="10"
-            placeholder="Mensaje"
-          ></textarea>
-        </div>
-        <div><input type="submit" value="Enviar" /></div>
-      </form>
+      <form method="post" name="miformulario" netlify>
+        <h2 class="titulo-contacto">Contacto</h2>
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="apellido" placeholder="Apellido">
+        <input type="email" name="email" placeholder="Correo">
+        <input type="number" name="telefono" placeholder="Telefono">
+        <textarea name="comentarios" id="comentarios" cols="30" rows="7"
+            placeholder="Escribe tus comentarios"></textarea>
+        <!-- <input type="submit" name="enviar" id="enviar"> -->
+        <input type="button" value="enviar" class="boton-enviar">
+    </form>
     </main>
     <footer class="estilo-footer">
       <div class="footer-logo">
