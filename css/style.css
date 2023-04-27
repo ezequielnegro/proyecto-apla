@@ -7,16 +7,18 @@
   font-family: "poppins";
   color: rgba(12, 12, 12, 1);
 }
-ul,p {
-  margin:0;
+
+ul,
+p {
+  margin: 0;
 }
 
 :root {
   --color-oscuro: rgba(12, 12, 12, 1);
   --color-claro: rgba(165, 135, 99, 1);
-  --color-trigo: rgba(216, 149, 67, 1); 
+  --color-trigo: rgba(216, 149, 67, 1);
   --color-rojizo: rgba(165, 97, 72, 1);
-  --color-marron:rgba(89, 55, 26, 1);
+  --color-marron: rgba(89, 55, 26, 1);
 }
 
 body {
@@ -27,10 +29,11 @@ body {
 .header-logo {
   display: flex;
   flex-flow: row;
-justify-content: center;
+  justify-content: center;
 }
 
-.logo {  width: 128px;
+.logo {
+  width: 128px;
   height: 96px;
   margin-left: 2%;
   margin-right: 2%;
@@ -59,8 +62,11 @@ a {
   padding: 2% 2% 2% 2%;
   justify-content: flex-end;
 }
-.lista{margin-left: 1%;
-margin-right: 1%;}
+
+.lista {
+  margin-left: 1%;
+  margin-right: 1%;
+}
 
 .seccion-1 {
   display: flex;
@@ -72,13 +78,13 @@ margin-right: 1%;}
 
 }
 
-.titulo-seccion-1{
+.titulo-seccion-1 {
   font-size: 4rem;
   text-align: center;
 }
 
-.parrafo-seccion-1{
-  font-size:larger;
+.parrafo-seccion-1 {
+  font-size: larger;
   text-align: center;
 }
 
@@ -88,65 +94,69 @@ margin-right: 1%;}
   margin: 20px;
 }
 
-.img-bordes{
+.img-bordes {
   border: solid 2px var(--color-oscuro);
 }
 
- .seccion-2 {
-   display: flex;
+.seccion-2 {
+  display: flex;
   flex-flow: column wrap;
- align-content: center;
- background-color: var(--color-trigo);
-}
- .titulo-seccion-2{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  
- 
- 
+  align-content: center;
+  background-color: var(--color-trigo);
 }
 
-.titulo-h2{
-  font-size:3rem;
+.titulo-seccion-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+
+}
+
+.titulo-h2 {
+  font-size: 3rem;
   text-transform: capitalize;
-  color:var(--color-marron);
+  color: var(--color-marron);
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
-.grupo-tarjetas{
+.grupo-tarjetas {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly
-
 }
 
-.card{
+.card {
   margin: 1%;
   margin-top: 0;
   border: solid 2px var(--color-oscuro);
 }
 
-.card-body{
-   background-color: var(--color-claro);
+.card-body {
+  background-color: var(--color-claro);
 }
-.card-title{
+
+.card-title {
   font-size: 2rem;
   font-weight: bold;
 }
-.card-text{
+
+.card-text {
   font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.list-group-item{
+
+.list-group-item {
   background-color: var(--color-rojizo);
   border: solid 1px var(--color-oscuro);
-font-weight: bold;
-font-size:1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
+
 .caja-texto {
   display: flex;
   width: 560px;
@@ -155,37 +165,33 @@ font-size:1.5rem;
 }
 
 
-.estilo-footer{
-   display: grid;
+.estilo-footer {
+  display: grid;
   grid-template-columns: 0.5fr 2fr;
   /* grid-template-rows: 96px; */
- 
-   background-color: var(--color-oscuro);
+
+  background-color: var(--color-oscuro);
 }
 
-/* .f{ border:solid white 5px;
-  height: 100vh;
-
-} */
 
 .footer-logo {
   /* grid-column: 1/2;
   grid-row: 1/2; */
   display: flex;
- flex-direction: row;
- justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .rrss {
   /* grid-column: 2/3;
   grid-row: 1/2; */
-   display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: end; 
+  justify-content: end;
   margin-right: 5%;
-} 
+}
 
-.imagen-rrss{
+.imagen-rrss {
   height: 64px;
   width: 128px;
 }
@@ -193,12 +199,12 @@ font-size:1.5rem;
 /* estilos para la pagina brew */
 
 
-img{
+img {
   width: 100%;
   height: 100%;
 }
 
-.conteiner-brew-titulo{
+.conteiner-brew-titulo {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -207,71 +213,75 @@ img{
 }
 
 
-.conteiner-brew{
+.conteiner-brew {
   display: grid;
-  grid-template-rows: repeat(4, 1fr) ;
-  grid-template-columns:  repeat(4, 1fr);
-   height: 100vh;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
   /* width: 100vw; */
   margin: 5% 5% 5% 5%;
   row-gap: 10px;
   column-gap: 10px;
 }
 
-.caja-brew{
+.caja-brew {
   border: solid black 2px;
-/* border-radius: 10%; */
-background-size: cover;
+  /* border-radius: 10%; */
+  background-size: cover;
 }
-.malta{
+
+.malta {
   grid-column: 1/2;
   grid-row: 2/3;
   background-image: url(../img/cebada.jpg);
 }
 
-.lupulo{
+.lupulo {
   grid-column: 1/2;
   grid-row: 3/4;
   background-image: url(../img/lupuo.jpg);
 
 }
-.levadura{
+
+.levadura {
   grid-column: 1/2;
   grid-row: 4/5;
   background-image: url(../img/levadura-cerveza.jpg);
 
 }
 
-.agua{
+.agua {
   grid-column: 1/2;
   grid-row: 1/2;
   background-image: url(../img/Agua.jpg);
-  
+
 }
 
-.coccion{ 
+.coccion {
   grid-column: 2/4;
   grid-row: 1/3;
   background-image: url(../img/coccion.jpg);
 }
 
-.fermentacion{ 
+.fermentacion {
   grid-column: 2/4;
   grid-row: 3/5;
- background-image: url(../img/fermentacion.jpg);
-}
-.embarrilado{ 
-  grid-column: 4/5;
-  grid-row: 1/3;
-background-image: url(../img/embarrilado.jpg);
-}
-.despacho{ 
-  grid-column: 4/5;
-  grid-row: 3/5;
- background-image: url(../img/despacho.jpg);
+  background-image: url(../img/fermentacion.jpg);
 }
 
-.conteiner-brew-texto{
+.embarrilado {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  background-image: url(../img/embarrilado.jpg);
+}
+
+.despacho {
+  grid-column: 4/5;
+  grid-row: 3/5;
+  background-image: url(../img/despacho.jpg);
+}
+
+.conteiner-brew-texto {
   font-size: 1rem;
   font-weight: bold;
   background-color: var(--color-trigo);
@@ -285,7 +295,7 @@ background-image: url(../img/embarrilado.jpg);
 form {
   width: 100%;
   height: 100vh;
-  background-color:rgba(227, 184, 168, 0.881);
+  background-color: rgba(227, 184, 168, 0.881);
   background-image: linear-gradient(rgba(227, 184, 168, 0.881), rgba(245, 241, 239, 0.6)), url(../img/keyboard.jpg);
   padding: 30px;
 }
@@ -324,44 +334,105 @@ form textarea {
   border: 4px solid var(--color-oscuro);
   padding: 10px;
 }
+
 /* Estilos para la pagina de historia */
-.historia-titulo{
-  display:flex;
+.historia-titulo {
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-image: url(../img/historia1.jpg);
   background-size: cover;
 }
-.historia-titulo-h1{
+
+.historia-titulo-h1 {
   font-size: 3rem;
   color: var(--color-claro);
 }
-.historia-seccion-2{
-display: flex;
-flex-direction: column;
-align-items: center;
+
+.historia-seccion-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.historia-articulo-1, .historia-articulo-2,.historia-articulo-3,.historia-articulo-4,.historia-articulo-5,.historia-articulo-6{
- 
+
+.historia-articulo-1,
+.historia-articulo-2,
+.historia-articulo-3,
+.historia-articulo-4,
+.historia-articulo-5,
+.historia-articulo-6 {
+
   width: 800px;
 }
 
 
 /* estilos de la página de estilos */
-.conteiner-estilos-cervezas{
-  display:grid;
-  grid-template-columns: 200px 800px;
-  grid-template-rows: 600px 600px;
+
+.main-estilos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteiner-estilos-cervezas {
+  display: grid;
+  grid-template-columns: 200px 600px;
+  grid-template-rows: 300px 300px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.conteiner-lager {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  border: solid 2px var(--color-marron);
+  background-color: var(--color-trigo);
+}
+
+.conteiner-ale {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  border: solid 2px var(--color-marron);
+  background-color: var(--color-rojizo);
+  color:var(--color-oscuro)
+}
+
+.menu-estilos li a{
+  color:var(--color-oscuro);
 }
 
 
+.conteiner-estilos-lager {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  border: solid 2px var(--color-marron);
+  background-color: var(--color-trigo);
+}
 
+.conteiner-estilos-ale {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  border: solid 2px var(--color-marron);
+  background-color: var(--color-rojizo);
+}
+
+.texto-ale,
+.texto-lager {
+  font-size: 2.5rem;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+}
+
+.conteiner-contenido-estilos{
+  width: 800px;
+}
 
 /* media query */
 
-@media screen and (max-width: 860px )  {
+@media screen and (max-width: 860px) {
 
 
   .cabecera {
@@ -369,69 +440,78 @@ align-items: center;
     flex-direction: column;
     align-items: center;
   }
+
   .menu {
     flex-wrap: nowrap;
     justify-content: center;
   }
 
 
-  .grupo-tarjetas{
+  .grupo-tarjetas {
 
     flex-direction: column;
     align-items: center;
   }
-  .titulo-h2{
-    font-size:2rem;
+
+  .titulo-h2 {
+    font-size: 2rem;
   }
-  .conteiner-brew-titulo{
+
+  .conteiner-brew-titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0;
     font-size: 1rem;
   }
-  .conteiner-brew{
+
+  .conteiner-brew {
     display: grid;
-    grid-template-rows: repeat(8, 300px) ;
+    grid-template-rows: repeat(8, 300px);
     grid-template-columns: 1fr;
     height: 100%;
     margin: 0;
-    
-      }
 
-      .agua{
-        grid-column: 1/2;
-        grid-row: 1/2;
-      }
-  .malta{
+  }
+
+  .agua {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .malta {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  
-  .lupulo{
+
+  .lupulo {
     grid-column: 1/2;
     grid-row: 3/4;
-  
+
   }
-  .levadura{
+
+  .levadura {
     grid-column: 1/2;
     grid-row: 4/5;
-    
+
   }
-  .coccion{ 
+
+  .coccion {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-  
-  .fermentacion{ 
+
+  .fermentacion {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-  .embarrilado{ 
+
+  .embarrilado {
     grid-column: 1/2;
     grid-row: 7/8;
   }
-  .despacho{ 
+
+  .despacho {
     grid-column: 1/2;
     grid-row: 8/9;
   }
