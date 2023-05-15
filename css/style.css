@@ -17,31 +17,24 @@ body {
   background-color: rgb(165, 135, 99);
 }
 
-.header-logo {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-}
-
-.logo {
-  width: 128px;
-  height: 96px;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-a {
-  color: rgb(165, 135, 99);
-}
-
-.color-fondo,
-.lista {
+.color-fondo {
   background-color: rgb(12, 12, 12);
 }
 
 .cabecera {
   display: grid;
   grid-template-columns: 0.5fr 2fr;
+}
+.cabecera .header-logo {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.cabecera .header-logo .logo {
+  width: 128px;
+  height: 96px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .menu {
@@ -52,10 +45,13 @@ a {
   padding: 2% 2% 2% 2%;
   justify-content: flex-end;
 }
-
-.lista {
+.menu .lista {
   margin-left: 1%;
   margin-right: 1%;
+  background-color: rgb(12, 12, 12);
+}
+.menu .lista a {
+  color: rgb(165, 135, 99);
 }
 
 .estilo-footer {
@@ -64,16 +60,20 @@ a {
   /* grid-template-rows: 96px; */
   background-color: rgb(12, 12, 12);
 }
-
-.footer-logo {
+.estilo-footer .footer-logo {
   /* grid-column: 1/2;
-  grid-row: 1/2; */
+    grid-row: 1/2; */
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
-.rrss {
+.estilo-footer .footer-logo .logo {
+  width: 128px;
+  height: 96px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.estilo-footer .rrss {
   /* grid-column: 2/3;
   grid-row: 1/2; */
   display: flex;
@@ -81,8 +81,7 @@ a {
   justify-content: end;
   margin-right: 5%;
 }
-
-.imagen-rrss {
+.estilo-footer .rrss .imagen-rrss {
   height: 64px;
   width: 128px;
 }
@@ -94,24 +93,26 @@ a {
   margin-bottom: 7%;
   margin-top: 7%;
 }
-
-.titulo-seccion-1 {
+.seccion-1 .caja-texto {
+  display: flex;
+  width: 560px;
+  flex-direction: column;
+  align-self: center;
+}
+.seccion-1 .caja-texto .titulo-seccion-1 {
   font-size: 4rem;
   text-align: center;
 }
-
-.parrafo-seccion-1 {
+.seccion-1 .caja-texto .parrafo-seccion-1 {
   font-size: larger;
   text-align: center;
 }
-
-.carrusel-custom {
+.seccion-1 .carrusel-custom {
   width: 400px;
   height: 600px;
   margin: 20px;
 }
-
-.img-bordes {
+.seccion-1 .carrusel-custom .img-bordes {
   border: solid 2px rgb(12, 12, 12);
 }
 
@@ -121,14 +122,12 @@ a {
   align-content: center;
   background-color: rgb(216, 149, 67);
 }
-
-.titulo-seccion-2 {
+.seccion-2 .titulo-seccion-2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
-.titulo-h2 {
+.seccion-2 .titulo-seccion-2 .titulo-h2 {
   font-size: 3rem;
   text-transform: capitalize;
   color: rgb(89, 55, 26);
@@ -136,29 +135,24 @@ a {
   margin-bottom: 20px;
   font-weight: bold;
 }
-
-.grupo-tarjetas {
+.seccion-2 .grupo-tarjetas {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-
-.card {
+.seccion-2 .grupo-tarjetas .card {
   margin: 1%;
   margin-top: 0;
   border: solid 2px rgb(12, 12, 12);
 }
-
-.card-body {
+.seccion-2 .grupo-tarjetas .card .card-body {
   background-color: rgb(165, 135, 99);
 }
-
-.card-title {
+.seccion-2 .grupo-tarjetas .card .card-body .card-title {
   font-size: 2rem;
   font-weight: bold;
 }
-
-.card-text {
+.seccion-2 .grupo-tarjetas .card .card-body .card-text {
   font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
@@ -169,13 +163,6 @@ a {
   border: solid 1px rgb(12, 12, 12);
   font-weight: bold;
   font-size: 1.5rem;
-}
-
-.caja-texto {
-  display: flex;
-  width: 560px;
-  flex-direction: column;
-  align-self: center;
 }
 
 img {
@@ -201,67 +188,57 @@ img {
   row-gap: 10px;
   column-gap: 10px;
 }
-
-.caja-brew {
+.conteiner-brew .caja-brew {
   border: solid black 2px;
   /* border-radius: 10%; */
   background-size: cover;
 }
-
-.malta {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  background-image: url(../img/cebada.jpg);
-}
-
-.lupulo {
-  grid-column: 1/2;
-  grid-row: 3/4;
-  background-image: url(../img/lupuo.jpg);
-}
-
-.levadura {
-  grid-column: 1/2;
-  grid-row: 4/5;
-  background-image: url(../img/levadura-cerveza.jpg);
-}
-
-.agua {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  background-image: url(../img/Agua.jpg);
-}
-
-.coccion {
-  grid-column: 2/4;
-  grid-row: 1/3;
-  background-image: url(../img/coccion.jpg);
-}
-
-.fermentacion {
-  grid-column: 2/4;
-  grid-row: 3/5;
-  background-image: url(../img/fermentacion.jpg);
-}
-
-.embarrilado {
-  grid-column: 4/5;
-  grid-row: 1/3;
-  background-image: url(../img/embarrilado.jpg);
-}
-
-.despacho {
-  grid-column: 4/5;
-  grid-row: 3/5;
-  background-image: url(../img/despacho.jpg);
-}
-
-.conteiner-brew-texto {
+.conteiner-brew .caja-brew .conteiner-brew-texto {
   font-size: 1rem;
   font-weight: bold;
   /* background-color: var(--color-trigo); */
   background: linear-gradient(78deg, rgba(165, 97, 72, 0.7) 15%, rgba(215, 148, 67, 0.7) 62%, rgba(216, 149, 67, 0.82) 84%);
   padding: 1% 1% 1% 1%;
+}
+.conteiner-brew .malta {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url(../img/cebada.jpg);
+}
+.conteiner-brew .lupulo {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-image: url(../img/lupuo.jpg);
+}
+.conteiner-brew .levadura {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background-image: url(../img/levadura-cerveza.jpg);
+}
+.conteiner-brew .agua {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-image: url(../img/Agua.jpg);
+}
+.conteiner-brew .coccion {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  background-image: url(../img/coccion.jpg);
+}
+.conteiner-brew .fermentacion {
+  grid-column: 2/4;
+  grid-row: 3/5;
+  background-image: url(../img/fermentacion.jpg);
+}
+.conteiner-brew .embarrilado {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  background-image: url(../img/embarrilado.jpg);
+}
+.conteiner-brew .despacho {
+  grid-column: 4/5;
+  grid-row: 3/5;
+  background-image: url(../img/despacho.jpg);
 }
 
 form {
@@ -271,14 +248,12 @@ form {
   background-image: linear-gradient(rgba(227, 184, 168, 0.881), rgba(245, 241, 239, 0.6)), url(../img/keyboard.jpg);
   padding: 30px;
 }
-
-.titulo-contacto {
+form .titulo-contacto {
   text-align: center;
   font-size: 40px;
   text-transform: upercase;
   text-decoration: underline rgb(216, 149, 67);
 }
-
 form input {
   width: 100%;
   font-size: 25px;
@@ -286,11 +261,9 @@ form input {
   border: none;
   border-bottom: 4px solid rgb(12, 12, 12);
 }
-
 form input::placeholder {
   color: rgb(216, 149, 67);
 }
-
 form textarea {
   width: 100%;
   font-size: 25px;
@@ -298,8 +271,7 @@ form textarea {
   border: none;
   border-bottom: 4px solid rgb(12, 12, 12);
 }
-
-.boton-enviar {
+form .boton-enviar {
   background-color: rgb(216, 149, 67);
   font-size: 25px;
   border: 4px solid rgb(12, 12, 12);
@@ -315,8 +287,7 @@ form textarea {
   background-image: url(../img/historia1.jpg);
   background-size: cover;
 }
-
-.historia-titulo-h1 {
+.historia-titulo .historia-titulo-h1 {
   font-size: 3rem;
   color: rgb(165, 135, 99);
 }
@@ -326,13 +297,12 @@ form textarea {
   flex-direction: column;
   align-items: center;
 }
-
-.historia-articulo-1,
-.historia-articulo-2,
-.historia-articulo-3,
-.historia-articulo-4,
-.historia-articulo-5,
-.historia-articulo-6 {
+.historia-seccion-2 .historia-articulo-1,
+.historia-seccion-2 .historia-articulo-2,
+.historia-seccion-2 .historia-articulo-3,
+.historia-seccion-2 .historia-articulo-4,
+.historia-seccion-2 .historia-articulo-5,
+.historia-seccion-2 .historia-articulo-6 {
   width: 800px;
 }
 
@@ -342,23 +312,24 @@ form textarea {
   flex-direction: column;
   align-items: center;
 }
-
-.conteiner-estilos-cervezas {
+.main-estilos h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.main-estilos .conteiner-estilos-cervezas {
   display: grid;
   grid-template-columns: 200px 600px;
   grid-template-rows: 300px 300px;
   column-gap: 10px;
   row-gap: 10px;
 }
-
-.conteiner-lager {
+.main-estilos .conteiner-lager {
   grid-row: 1/2;
   grid-column: 1/2;
   border: solid 2px rgb(89, 55, 26);
   background-color: rgb(216, 149, 67);
 }
-
-.conteiner-ale {
+.main-estilos .conteiner-ale {
   grid-row: 2/3;
   grid-column: 1/2;
   border: solid 2px rgb(89, 55, 26);
@@ -395,18 +366,22 @@ form textarea {
 .conteiner-contenido-estilos {
   width: 800px;
 }
-
-.descripcion-estilo {
+.conteiner-contenido-estilos .descripcion-estilo {
   margin: 5% 5% 5% 5%;
   border: solid 3px rgb(165, 97, 72);
   padding: 5% 5% 5% 5%;
   border-radius: 5px;
 }
+.conteiner-contenido-estilos .descripcion-estilo .descripcion-estilo-metricas {
+  width: 300px;
+  padding-left: 15px;
+  background: linear-gradient(78deg, rgba(165, 97, 72, 0.7) 15%, rgba(215, 148, 67, 0.7) 62%, rgba(216, 149, 67, 0.82) 84%);
+}
 
 /* .descripcion-estilo-sinopsis{
-  display: flex;
-  flex-direction: column;
-} */
+    display: flex;
+    flex-direction: column;
+  } */
 hr {
   color: rgb(12, 12, 12);
   border-color: rgb(12, 12, 12);
@@ -420,14 +395,8 @@ span {
   font-weight: bold;
 }
 
-.descripcion-estilo-metricas {
-  width: 300px;
-  padding-left: 15px;
-  background: linear-gradient(78deg, rgba(165, 97, 72, 0.7) 15%, rgba(215, 148, 67, 0.7) 62%, rgba(216, 149, 67, 0.82) 84%);
-}
-
 /* media query */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .cabecera {
     display: flex;
     flex-direction: column;
@@ -458,35 +427,35 @@ span {
     height: 100%;
     margin: 0;
   }
-  .agua {
+  .conteiner-brew .agua {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .malta {
+  .conteiner-brew .malta {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .lupulo {
+  .conteiner-brew .lupulo {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  .levadura {
+  .conteiner-brew .levadura {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  .coccion {
+  .conteiner-brew .coccion {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-  .fermentacion {
+  .conteiner-brew .fermentacion {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-  .embarrilado {
+  .conteiner-brew .embarrilado {
     grid-column: 1/2;
     grid-row: 7/8;
   }
-  .despacho {
+  .conteiner-brew .despacho {
     grid-column: 1/2;
     grid-row: 8/9;
   }

@@ -1,30 +1,32 @@
 .historia-titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 600px;
-    background-image: url(../img/historia1.jpg);
-    background-size: cover;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/historia1.jpg);
+  background-size: cover;
+
   .historia-titulo-h1 {
     font-size: 3rem;
     color: $color-claro;
   }
-  
-  .historia-seccion-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+}
+
+
+
+.historia-seccion-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .historia-articulo-1,
   .historia-articulo-2,
   .historia-articulo-3,
   .historia-articulo-4,
   .historia-articulo-5,
   .historia-articulo-6 {
-  
+
     width: 800px;
   }
+}
