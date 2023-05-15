@@ -1,0 +1,95 @@
+.seccion-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 7%;
+    margin-top: 7%;
+  
+  
+  }
+  
+  .titulo-seccion-1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  .parrafo-seccion-1 {
+    font-size: larger;
+    text-align: center;
+  }
+  
+  .carrusel-custom {
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+  }
+  
+  .img-bordes {
+    border: solid 2px $color-oscuro;
+  }
+  
+  .seccion-2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: $color-trigo;
+  }
+  
+  .titulo-seccion-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  
+  
+  }
+  
+  .titulo-h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: $color-marron;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .grupo-tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+  }
+  
+  .card {
+    margin: 1%;
+    margin-top: 0;
+    border: solid 2px $color-oscuro;
+  }
+  
+  .card-body {
+    background-color: $color-claro;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .list-group-item {
+    background-color: $color-rojizo;
+    border: solid 1px $color-oscuro;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .caja-texto {
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+    align-self: center;
+  }

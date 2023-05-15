@@ -1,0 +1,95 @@
+/* estilos de la página de estilos */
+
+.main-estilos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .conteiner-estilos-cervezas {
+    display: grid;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: 300px 300px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  
+  .conteiner-lager {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border: solid 2px $color-marron;
+    background-color: $color-trigo;
+  }
+  
+  .conteiner-ale {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    border: solid 2px $color-marron;
+    background-color: $color-rojizo;
+    color: $color-oscuro;
+  }
+  
+  .menu-estilos li a {
+    color: $color-oscuro;
+  }
+  
+  
+  .conteiner-estilos-lager {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border: solid 2px $color-marron;
+    background-color: $color-trigo;
+  }
+  
+  .conteiner-estilos-ale {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    border: solid 2px $color-marron;
+    background-color: $color-rojizo;
+  }
+  
+  .texto-ale,
+  .texto-lager {
+    font-size: 2.5rem;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+  }
+  
+  .conteiner-contenido-estilos {
+    width: 800px;
+  
+  }
+  
+  .descripcion-estilo {
+    margin: 5% 5% 5% 5%;
+    border: solid 3px $color-rojizo;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+  }
+  
+  /* .descripcion-estilo-sinopsis{
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  hr {
+    color: $color-oscuro;
+    border-color: $color-oscuro;
+    height: 2px;
+  
+  }
+  
+  span {
+    color: $color-marron;
+    /* text-shadow: 1px 1px 1px var(--color-oscuro); */
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .descripcion-estilo-metricas {
+    width: 300px;
+    padding-left: 15px;
+    background: linear-gradient(78deg, rgba(165, 97, 72, 0.7) 15%, rgba(215, 148, 67, 0.7) 62%, rgba(216, 149, 67, 0.82) 84%)
+  }
+  

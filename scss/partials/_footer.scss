@@ -1,0 +1,31 @@
+
+.estilo-footer {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    /* grid-template-rows: 96px; */
+  
+    background-color: $color-oscuro;
+  }
+  
+  
+  .footer-logo {
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .rrss {
+    /* grid-column: 2/3;
+    grid-row: 1/2; */
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 5%;
+  }
+  
+  .imagen-rrss {
+    height: 64px;
+    width: 128px;
+  }
