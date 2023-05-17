@@ -24,7 +24,7 @@
   .titulo-h2 {
     font-size: 2rem;
   }
-
+// media querys para brew
   .conteiner-brew-titulo {
     display: flex;
     flex-direction: row;
@@ -39,6 +39,13 @@
     grid-template-columns: 1fr;
     height: 100%;
     margin: 0;
+    .caja-brew{
+      &:hover {
+        transform: none;
+        transition: none;
+    }
+  }
+    
 
     .agua {
       grid-column: 1/2;

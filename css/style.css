@@ -426,6 +426,10 @@ span {
     height: 100%;
     margin: 0;
   }
+  .conteiner-brew .caja-brew:hover {
+    transform: none;
+    transition: none;
+  }
   .conteiner-brew .agua {
     grid-column: 1/2;
     grid-row: 1/2;
