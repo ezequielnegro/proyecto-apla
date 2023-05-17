@@ -11,18 +11,21 @@
     flex-direction: column;
     align-self: center;
 
-   
+
 
     .titulo-seccion-1 {
       font-size: 4rem;
       text-align: center;
-      animation-name: titulo;
-      animation-duration: 6s;
-      animation-iteration-count:initial;
+      @include animaciones(titulo, 6s, initial);
 
       @keyframes titulo {
         0% {
           opacity: 0;
+        }
+
+        50% {
+          opacity: 0.5;
+          font-size: 6rem;
         }
 
         100% {
@@ -47,7 +50,7 @@
     .img-bordes {
       border: solid 2px $color-oscuro;
 
-    
+
     }
   }
 
