@@ -193,6 +193,10 @@ img {
   /* border-radius: 10%; */
   background-size: cover;
 }
+.conteiner-brew .caja-brew:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 2s;
+}
 .conteiner-brew .caja-brew .conteiner-brew-texto {
   font-size: 1rem;
   font-weight: bold;
