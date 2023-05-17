@@ -297,12 +297,7 @@ form .boton-enviar {
   flex-direction: column;
   align-items: center;
 }
-.historia-seccion-2 .historia-articulo-1,
-.historia-seccion-2 .historia-articulo-2,
-.historia-seccion-2 .historia-articulo-3,
-.historia-seccion-2 .historia-articulo-4,
-.historia-seccion-2 .historia-articulo-5,
-.historia-seccion-2 .historia-articulo-6 {
+.historia-seccion-2 .historia-articulo {
   width: 800px;
 }
 
@@ -458,6 +453,33 @@ span {
   .conteiner-brew .despacho {
     grid-column: 1/2;
     grid-row: 8/9;
+  }
+  .main-estilos .conteiner-estilos-cervezas {
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 300px 300px;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+  .conteiner-contenido-estilos {
+    width: 300px;
+  }
+  .conteiner-contenido-estilos .descripcion-estilo .descripcion-estilo-metricas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+  }
+  .historia-titulo {
+    width: 300px;
+    height: 200px;
+    background-image: none;
+  }
+  .historia-titulo .historia-titulo-h1 {
+    font-size: 2rem;
+    color: rgb(12, 12, 12);
+  }
+  .historia-seccion-2 .historia-articulo {
+    width: 300px;
   }
 }
 

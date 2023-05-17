@@ -3,76 +3,128 @@
 @media screen and (max-width: 375px) {
 
 
-    .cabecera {
+  .cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+
+  .grupo-tarjetas {
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo-h2 {
+    font-size: 2rem;
+  }
+
+  .conteiner-brew-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .conteiner-brew {
+    display: grid;
+    grid-template-rows: repeat(8, 300px);
+    grid-template-columns: 1fr;
+    height: 100%;
+    margin: 0;
+
+    .agua {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .malta {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .lupulo {
+      grid-column: 1/2;
+      grid-row: 3/4;
+
+    }
+
+    .levadura {
+      grid-column: 1/2;
+      grid-row: 4/5;
+
+    }
+
+    .coccion {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+
+    .fermentacion {
+      grid-column: 1/2;
+      grid-row: 6/7;
+    }
+
+    .embarrilado {
+      grid-column: 1/2;
+      grid-row: 7/8;
+    }
+
+    .despacho {
+      grid-column: 1/2;
+      grid-row: 8/9;
+    }
+
+  }
+// media querys para estilos
+.main-estilos {
+  .conteiner-estilos-cervezas {
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 300px 300px;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+
+}
+
+
+
+.conteiner-contenido-estilos {
+  width: 300px;
+  .descripcion-estilo {  
+  .descripcion-estilo-metricas {
       display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-  
-    .menu {
-      flex-wrap: nowrap;
       justify-content: center;
-    }
-  
-  
-    .grupo-tarjetas {
-  
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .titulo-h2 {
-      font-size: 2rem;
-    }
-  
-    .conteiner-brew-titulo {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 0;
-      font-size: 1rem;
-    }
-  
-    .conteiner-brew {
-      display: grid;
-      grid-template-rows: repeat(8, 300px);
-      grid-template-columns: 1fr;
-      height: 100%;
-      margin: 0;
-      .agua {
-        grid-column: 1/2;
-        grid-row: 1/2;
-      }
-      .malta {
-        grid-column: 1/2;
-        grid-row: 2/3;
-      }
-      .lupulo {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    
-      }
-      .levadura {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    
-      }
-      .coccion {
-        grid-column: 1/2;
-        grid-row: 5/6;
-      }
-      .fermentacion {
-        grid-column: 1/2;
-        grid-row: 6/7;
-      }
-      .embarrilado {
-        grid-column: 1/2;
-        grid-row: 7/8;
-      }
-      .despacho {
-        grid-column: 1/2;
-        grid-row: 8/9;
-      }
-    
+      width: 200px;
     }
   }
+
+}
+
+
+  // media querys para historia
+  .historia-titulo {
+    width: 300px;
+    height: 200px;
+    background-image: none;
+    .historia-titulo-h1 {
+      font-size: 2rem;
+      color: $color-oscuro;
+    }
+  }
+
+  .historia-seccion-2 {
+    .historia-articulo {
+      width: 300px;
+    }
+  }
+
+}
