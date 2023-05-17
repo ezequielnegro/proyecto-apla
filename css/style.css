@@ -102,6 +102,18 @@ body {
 .seccion-1 .caja-texto .titulo-seccion-1 {
   font-size: 4rem;
   text-align: center;
+  animation-name: titulo;
+  animation-duration: 6s;
+  animation-iteration-count: initial;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    font-size: 8rem;
+  }
 }
 .seccion-1 .caja-texto .parrafo-seccion-1 {
   font-size: larger;
@@ -114,6 +126,10 @@ body {
 }
 .seccion-1 .carrusel-custom .img-bordes {
   border: solid 2px rgb(12, 12, 12);
+}
+.seccion-1 .carrusel-custom .img-bordes .d-flex:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 2s ease-out;
 }
 
 .seccion-2 {

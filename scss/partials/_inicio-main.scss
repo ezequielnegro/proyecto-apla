@@ -11,9 +11,25 @@
     flex-direction: column;
     align-self: center;
 
+   
+
     .titulo-seccion-1 {
       font-size: 4rem;
       text-align: center;
+      animation-name: titulo;
+      animation-duration: 6s;
+      animation-iteration-count:initial;
+
+      @keyframes titulo {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+          font-size: 8rem;
+        }
+      }
     }
 
     .parrafo-seccion-1 {
@@ -27,13 +43,18 @@
     height: 600px;
     margin: 20px;
 
+
     .img-bordes {
       border: solid 2px $color-oscuro;
+
+      .d-flex:hover {
+        transform: scale(1.2, 1.2);
+        transition: all 2s ease-out;
+      }
     }
   }
 
 }
-
 
 
 
@@ -98,15 +119,3 @@
   font-weight: bold;
   font-size: 1.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
